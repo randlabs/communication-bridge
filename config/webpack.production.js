@@ -25,14 +25,17 @@ module.exports = env => ({
 					loader: 'babel-loader',
 					options: { presets: [ 'es2015' ] }
 			 },
-			 test: /\.js$/,
+			 test: /\.js$/u,
 			 exclude: /node_modules/
 		  }
 		]
 	  },
 	plugins: [
 		new UglifyJSPlugin({
-			sourceMap: false
+			sourceMap: false,
+			uglifyOptions: {
+				warnings: true,
+			}
 		}),
 		new CleanWebpackPlugin({}),
 	]
