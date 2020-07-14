@@ -26,13 +26,14 @@ module.exports = env => ({
 					options: { presets: [ 'es2015' ] }
 			 },
 			 test: /\.js$/u,
-			 exclude: /node_modules/
+			 exclude: /node_modules/u
 		  }
 		]
 	  },
 	plugins: [
 		new UglifyJSPlugin({
 			sourceMap: false,
+			cache: path.join(__dirname, "../", ".uglifycache"),
 			uglifyOptions: {
 				warnings: true,
 			}
