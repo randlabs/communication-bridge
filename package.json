@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "types": "@types/index.d.ts",
   "scripts": {
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server --env.mode development --open",
