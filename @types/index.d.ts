@@ -1,6 +1,6 @@
 type ReplyCB = (response: Object) => void;
 
-type onMessageCallback = (req: any, origin: string, sendResponse: ReplyCB) => void;
+type onMessageCallback = (req: any, origin: string, source: Window, sendResponse: ReplyCB) => void;
 
 interface SendMessageOptions {
     waitForReply: boolean;
