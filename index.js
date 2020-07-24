@@ -1,3 +1,1 @@
-module.exports = {
-	Messenger: require("./lib/messenger")
-};
+module.exports = require("./lib/messenger");
