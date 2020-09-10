@@ -4,7 +4,7 @@ type onMessageCallback = (req: any, origin: string, source: Window, sendResponse
 
 interface SendMessageOptions {
     waitForReply?: boolean;
-    origin: string;
+    origin?: string;
     timeout?: number;
 }
 
