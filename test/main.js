@@ -1,6 +1,6 @@
 const Messenger = require("../lib/messenger");
 
-const client = new Messenger("test", function(data, origin, reply) {
+const client = new Messenger("test", function(data, origin, source, reply, bridge) {
 	console.log(data, origin);
 });
 
@@ -10,7 +10,7 @@ if (frame && frame.contentWindow) {
 	frame.onload = (event) => {
 		client.sendMessage(frame.contentWindow, {
 			hello: "world"
-		}, '*', { waitForReply: true })
+		}, { waitForReply: true, origin: "*" })
 		.then((value) => {
 			console.log(value);
 		});
