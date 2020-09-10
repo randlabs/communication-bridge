@@ -9,7 +9,7 @@ interface SendMessageOptions {
 }
 
 export default class Messenger {
-    constructor(channelName: string, onMessage: onMessageCallback);
+    constructor(channelName: string, onMessage?: onMessageCallback);
     sendMessage(winContext: Window, message: any, options?: SendMessageOptions): Promise<any>;
     close(): void;
 }
