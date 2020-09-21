@@ -4,12 +4,11 @@ type onMessageCallback<T, V> = (req: T, origin: string, source: Window, sendResp
 
 interface sendMessageOptions {
     waitForReply?: boolean;
-    origin?: string;
     timeout?: number;
 }
 
 export default class Messenger<Request, Response> {
     constructor(channelName: string, onMessage?: onMessageCallback<Request,Response>);
-    sendMessage(winContext: Window, message: Request, options?: sendMessageOptions): Promise<Response>;
+    sendMessage(targetWindow: Window, message: Request, origin: string, options?: sendMessageOptions): Promise<Response>;
     close(): void;
 }
