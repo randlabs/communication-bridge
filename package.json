@@ -13,7 +13,7 @@
     "build:prod": "npm run webpack -- --env.mode production"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rand Labs",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
