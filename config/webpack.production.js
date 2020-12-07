@@ -2,7 +2,6 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-
 module.exports = env => ({
 	entry: {
 		"bridge-communication.min": path.join(__dirname, '../', 'index')
@@ -33,7 +32,6 @@ module.exports = env => ({
 	plugins: [
 		new UglifyJSPlugin({
 			sourceMap: false,
-			cache: path.join(__dirname, "../", ".uglifycache"),
 			uglifyOptions: {
 				warnings: true,
 			}
