@@ -7,3 +7,5 @@ node_modules
 webpack.config.js
 dist
 .uglifycache
+.vscode
+.gitattributes

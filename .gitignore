@@ -106,3 +106,5 @@ build
 package-lock.json
 
 .uglifycache
+
+dist/
