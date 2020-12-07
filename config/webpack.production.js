@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = env => ({
 	entry: {
-		"index": path.join(__dirname, '../', 'index')
+		"bridge-communication.min": path.join(__dirname, '../', 'index')
 	},
 	output: {
 		path: path.join(__dirname, '../', 'dist'),
