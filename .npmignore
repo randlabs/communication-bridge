@@ -1,0 +1,10 @@
+dist
+config
+test
+node_modules
+package-lock.json
+webpack.config.js
+build
+.uglifycache
+.eslintrc.js
+.gitignore

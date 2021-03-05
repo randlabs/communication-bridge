@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "types": "@types/index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server --env.mode development --open",
     "dev": "npm run build:dev && npm run webpack-dev-server",
     "start": "npm run dev",
     "build:dev": "npm run webpack -- --env.mode development",
-    "build:prod": "npm run webpack -- --env.mode production"
+    "build": "npm run webpack -- --env.mode production"
   },
   "keywords": [],
   "author": "Rand Labs",
