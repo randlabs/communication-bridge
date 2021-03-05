@@ -1,10 +1,11 @@
-dist
-config
 test
-node_modules
-package-lock.json
-webpack.config.js
 build
-.uglifycache
+config
+node_modules
 .eslintrc.js
 .gitignore
+webpack.config.js
+dist
+.uglifycache
+.vscode
+.gitattributes
