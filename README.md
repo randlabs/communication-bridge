@@ -1,4 +1,4 @@
-# bridge-communication
+# Communication-bridge
 
 * [Overview](#Overview)
 * [Installation](#Installation)
